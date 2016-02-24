@@ -16,11 +16,9 @@
         android:textSize="30dp"
         android:padding="10dp"/>
 
-
-
     <TableLayout
-        android:id="@+id/nameTable"
-        android:layout_width="match_parent"
+        android:id="@+id/moduleDetailsTable"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_gravity="center_vertical"
@@ -30,7 +28,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Meadhbh Murphy"
+            android:text="Agile Software Engineering"
             android:padding="20dp"
             android:gravity="center"
             android:textSize="18dp"
@@ -45,12 +43,12 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:text="Student ID"
+                android:text="Module Code"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="120012544"
+                android:text="AC31007"
                 android:paddingLeft="20dp"/>
         </TableRow>
 
@@ -62,12 +60,12 @@
             android:background="#E3F2FD">
 
             <TextView
-                android:text="Password"
+                android:text="Lecturer"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="1234"
+                android:text="Dr Mark Snaith"
                 android:paddingLeft="20dp" />
         </TableRow>
 
@@ -84,15 +82,51 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="m.x.murphy@dundee.ac.uk"
-                android:layout_marginLeft="20dp" />
+                android:layout_width="wrap_content"
+                android:text="m.snaith@dundee.ac.uk"
+                android:layout_marginLeft="20dp"
+                android:singleLine="false"/>
+        </TableRow>
 
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#E3F2FD">
+
+            <TextView
+                android:text="Room Number"
+                android:paddingRight="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="2.15 QMB"
+                android:paddingLeft="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#BBDEFB"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Current Week"
+                android:paddingRight="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="5/12"
+                android:paddingLeft="20dp"/>
         </TableRow>
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/moduleTable"
-        android:layout_width="match_parent"
+        android:id="@+id/moduleAttendanceTable"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_gravity="center_vertical"
@@ -102,7 +136,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Module List"
+            android:text="Attendance Details"
             android:padding="20dp"
             android:gravity="center"
             android:textSize="18dp"
@@ -114,16 +148,15 @@
             android:paddingRight="20dp"
             android:paddingBottom="10dp"
             android:background="#BBDEFB"
-            android:gravity="center_vertical"
-            android:onClick="viewStudentModule">
+            android:gravity="center_vertical">
 
             <TextView
-                android:text="AC31007"
+                android:text="Personal Attendance"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="Agile Software Engineering"
+                android:text="percentage"
                 android:paddingLeft="20dp"/>
         </TableRow>
 
@@ -135,33 +168,13 @@
             android:background="#E3F2FD">
 
             <TextView
-                android:text="AC31009"
+                android:text="Average Attendance"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="Games Programming"
+                android:text="percentage"
                 android:paddingLeft="20dp" />
-        </TableRow>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB">
-
-            <TextView
-                android:text="AC32005"
-                android:layout_marginRight="20dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Human Computer Interaction And Usability Engineering"
-                android:layout_marginLeft="20dp"
-                android:singleLine="false"/>
-
         </TableRow>
     </TableLayout>
 

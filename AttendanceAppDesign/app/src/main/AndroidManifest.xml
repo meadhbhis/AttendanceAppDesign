@@ -38,6 +38,10 @@
             android:label="@string/title_activity_example_profile"
             android:theme="@style/FullscreenTheme" >
         </activity>
+        <activity
+            android:name=".StudentModuleActivity"
+            android:label="@string/title_activity_student_module" >
+        </activity>
     </application>
 
 </manifest>
