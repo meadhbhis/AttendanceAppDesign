@@ -16,6 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StudentProfileActivity"
+            android:label="@string/title_activity_student_profile" >
+        </activity>
+        <activity
+            android:name=".StudentTimetableActivity"
+            android:label="@string/title_activity_student_timetable" >
+        </activity>
+        <activity
+            android:name=".StaffTimetableActivity"
+            android:label="@string/title_activity_staff_timetable" >
+        </activity>
+        <activity
+            android:name=".StaffProfileActivity"
+            android:label="@string/title_activity_staff_profile" >
+        </activity>
+        <activity
+            android:name=".ExampleProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_example_profile"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
     </application>
 
 </manifest>

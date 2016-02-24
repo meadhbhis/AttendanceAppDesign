@@ -7,18 +7,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class LoginActvity extends Activity {
+public class StaffTimetableActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_actvity);
+        setContentView(R.layout.activity_staff_timetable);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_actvity, menu);
+        getMenuInflater().inflate(R.menu.menu_staff_timetable, menu);
         return true;
     }
 
@@ -37,17 +37,10 @@ public class LoginActvity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    //MEADHBH'S BUTTON CODE
-    public void login(View view){
-        Intent intent = new Intent(this, StudentTimetableActivity.class);
+    public void viewStaffProfile(View view){
+        Intent intent = new Intent(this, StaffProfileActivity.class);
 
         startActivity(intent);
 
-    }
-
-    public void staffLogin(View view){
-        Intent intent = new Intent(this, StaffTimetableActivity.class);
-
-        startActivity(intent);
     }
 }

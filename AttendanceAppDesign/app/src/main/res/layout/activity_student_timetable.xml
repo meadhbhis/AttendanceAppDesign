@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E1F5FE">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="University of Dundee"
+        android:id="@+id/textView"
+        android:textColor="#FFF"
+        android:background="#2962FF"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginRight="20dp"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arrow"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MENU"
+            android:layout_weight="50"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="viewStudentProfile"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="arrow"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Friday 26th February"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18dp"
+        android:background="#42A5F5"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:id="@+id/timetableTable"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_weight="3"
+            android:background="#BBDEFB"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:text="09:00 - 10:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_weight="3"
+            android:background="#E3F2FD"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:text="10:00 - 11:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_weight="3"
+            android:background="#BBDEFB">
+            <TextView
+                android:text="11:00 - 12:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text="Agile Programming // Dalhousie 2S14"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_weight="3"
+            android:background="#E3F2FD">
+            <TextView
+                android:text="12:00 - 13:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_weight="3"
+            android:background="#BBDEFB">
+            <TextView
+                android:text="13:00 - 14:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_weight="3"
+            android:background="#E3F2FD">
+            <TextView
+                android:text="14:00 - 15:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row7"
+            android:layout_weight="3"
+            android:background="#BBDEFB">
+            <TextView
+                android:text="15:00 - 16:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row8"
+            android:layout_weight="3"
+            android:background="#E3F2FD">
+            <TextView
+                android:text="16:00 - 17:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row9"
+            android:layout_weight="3"
+            android:background="#BBDEFB">
+            <TextView
+                android:text="17:00 - 18:00"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" />
+
+
+</LinearLayout>

@@ -1,24 +1,22 @@
 package dundeeuniversity.attendanceappdesign;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class LoginActvity extends Activity {
+public class StudentProfileActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_actvity);
+        setContentView(R.layout.activity_student_profile);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_actvity, menu);
+        getMenuInflater().inflate(R.menu.menu_student_profile, menu);
         return true;
     }
 
@@ -35,19 +33,5 @@ public class LoginActvity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    //MEADHBH'S BUTTON CODE
-    public void login(View view){
-        Intent intent = new Intent(this, StudentTimetableActivity.class);
-
-        startActivity(intent);
-
-    }
-
-    public void staffLogin(View view){
-        Intent intent = new Intent(this, StaffTimetableActivity.class);
-
-        startActivity(intent);
     }
 }

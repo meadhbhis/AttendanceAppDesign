@@ -3,4 +3,12 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_student_profile">Your Profile</string>
+    <string name="title_activity_student_timetable">Today\'s Timetable</string>
+    <string name="title_activity_staff_timetable">Today\'s Timetable</string>
+    <string name="title_activity_staff_profile">Your Profile</string>
+
+    <string name="title_activity_example_profile">ExampleProfileActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
