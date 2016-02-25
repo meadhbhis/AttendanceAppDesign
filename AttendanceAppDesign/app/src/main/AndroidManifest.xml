@@ -50,6 +50,10 @@
             android:name=".StaffStudentListActivity"
             android:label="@string/title_activity_staff_student_list" >
         </activity>
+        <activity
+            android:name=".StaffViewStudentActivity"
+            android:label="@string/title_activity_staff_view_student" >
+        </activity>
     </application>
 
 </manifest>
