@@ -39,7 +39,7 @@ public class LoginActvity extends Activity {
 
     //MEADHBH'S BUTTON CODE
     public void login(View view){
-        Intent intent = new Intent(this, StudentTimetableActivity.class);
+        Intent intent = new Intent(this, qrScan.class);
 
         startActivity(intent);
 
