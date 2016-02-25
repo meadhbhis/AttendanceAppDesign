@@ -62,6 +62,10 @@
             android:name=".StaffViewClassActivity"
             android:label="@string/title_activity_staff_view_class" >
         </activity>
+        <activity
+            android:name=".StudentViewClassActivity"
+            android:label="@string/title_activity_student_view_class" >
+        </activity>
     </application>
 
 </manifest>

@@ -17,4 +17,5 @@
     <string name="title_activity_staff_view_student">StaffViewStudentActivity</string>
     <string name="title_activity_scan_qrtest">Scan QR Test</string>
     <string name="title_activity_staff_view_class">View Class</string>
+    <string name="title_activity_student_view_class">View Class</string>
 </resources>
