@@ -30,7 +30,7 @@
             android:text="Agile Software Engineering"
             android:padding="20dp"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
 
         <TableRow
@@ -60,12 +60,12 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:text="Class Size"
+                android:text="Date"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="number"
+                android:text="Friday 26th February"
                 android:paddingLeft="20dp"/>
         </TableRow>
 
@@ -78,52 +78,54 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:text="Current Week"
+                android:text="Time"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:text="5/12"
+                android:text="11:00am"
+                android:paddingLeft="20dp"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#E3F2FD"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Currently Attending"
+                android:paddingRight="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Number/Class Size"
                 android:paddingLeft="20dp"/>
         </TableRow>
     </TableLayout>
 
-    <TableLayout
-        android:id="@+id/moduleAttendanceTable"
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:background="#42A5F5">
+        android:text="Attendance Details"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="#42A5F5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Attendance Details"
-            android:padding="20dp"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:text="Average Attendance"
-                android:paddingRight="20dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:text="percentage"
-                android:paddingLeft="20dp"/>
-        </TableRow>
-    </TableLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="50dp"
+        android:text="SCAN QR CODE"/>
 
 
 </LinearLayout>
