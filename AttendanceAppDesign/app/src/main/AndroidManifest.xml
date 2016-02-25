@@ -58,6 +58,10 @@
             android:name=".ScanQRTestActivity"
             android:label="@string/title_activity_scan_qrtest" >
         </activity>
+        <activity
+            android:name=".StaffViewClassActivity"
+            android:label="@string/title_activity_staff_view_class" >
+        </activity>
     </application>
 
 </manifest>
