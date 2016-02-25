@@ -42,6 +42,14 @@
             android:name=".StudentModuleActivity"
             android:label="@string/title_activity_student_module" >
         </activity>
+        <activity
+            android:name=".StaffModuleActivity"
+            android:label="@string/title_activity_staff_module" >
+        </activity>
+        <activity
+            android:name=".StaffStudentListActivity"
+            android:label="@string/title_activity_staff_student_list" >
+        </activity>
     </application>
 
 </manifest>

@@ -12,4 +12,6 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_student_module">Module Details</string>
+    <string name="title_activity_staff_module">Module Details</string>
+    <string name="title_activity_staff_student_list">Student List</string>
 </resources>

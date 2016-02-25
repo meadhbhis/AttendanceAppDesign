@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="University of Dundee"
+        android:id="@+id/textView"
+        android:textColor="#FFF"
+        android:background="#2962FF"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:padding="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp">
+
+        <TableLayout
+            android:id="@+id/moduleDetailsTable"
+            android:layout_below="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="#42A5F5">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Matriculated Students"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView"/>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#E3F2FD"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#E3F2FD"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#E3F2FD"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#E3F2FD"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#E3F2FD"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#BBDEFB"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:background="#E3F2FD"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:text="LastName FirstName"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="number"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>
