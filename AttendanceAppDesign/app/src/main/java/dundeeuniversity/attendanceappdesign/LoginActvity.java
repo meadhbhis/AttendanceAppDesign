@@ -38,8 +38,8 @@ public class LoginActvity extends Activity {
     }
 
     //MEADHBH'S BUTTON CODE
-    public void login(View view){
-        Intent intent = new Intent(this, qrScan.class);
+    public void qrCode(View view){
+        Intent intent = new Intent(this, ScanQRTestActivity.class);
 
         startActivity(intent);
 

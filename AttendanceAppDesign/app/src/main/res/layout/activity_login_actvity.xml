@@ -46,11 +46,11 @@
             android:id="@+id/loginConfirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Student Confirm"
+            android:text="QR CODE"
             android:layout_below="@+id/password"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:onClick="login"/>
+            android:onClick="qrCode"/>
 
         <Button
             android:id="@+id/loginStaff"

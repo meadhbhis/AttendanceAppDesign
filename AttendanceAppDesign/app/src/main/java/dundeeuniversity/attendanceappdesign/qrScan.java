@@ -21,7 +21,7 @@ public class qrScan extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //set the main content layout of the Activity
-        setContentView(R.layout.activity_open_qrscanner);
+        setContentView(R.layout.qr_code);
     }
 
     //product barcode mode

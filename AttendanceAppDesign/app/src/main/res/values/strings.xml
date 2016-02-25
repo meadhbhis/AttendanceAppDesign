@@ -15,4 +15,5 @@
     <string name="title_activity_staff_module">Module Details</string>
     <string name="title_activity_staff_student_list">Student List</string>
     <string name="title_activity_staff_view_student">StaffViewStudentActivity</string>
+    <string name="title_activity_scan_qrtest">Scan QR Test</string>
 </resources>

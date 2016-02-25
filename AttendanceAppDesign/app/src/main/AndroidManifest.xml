@@ -54,6 +54,10 @@
             android:name=".StaffViewStudentActivity"
             android:label="@string/title_activity_staff_view_student" >
         </activity>
+        <activity
+            android:name=".ScanQRTestActivity"
+            android:label="@string/title_activity_scan_qrtest" >
+        </activity>
     </application>
 
 </manifest>
