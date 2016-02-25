@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#E1F5FE">
+    android:orientation="vertical">
 
 
     <TextView
@@ -18,59 +17,59 @@
         android:padding="10dp" />
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="30dp">
+        android:layout_margin="30dp"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="USERNAME"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="50dp"
+            android:gravity="center"/>
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="four"
             android:inputType="numberPassword"
-            android:layout_below="@+id/username"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:maxLength="4"/>
+            android:maxLength="4"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/loginConfirm"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="QR CODE"
-            android:layout_below="@+id/password"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:onClick="qrCode"/>
+            android:layout_marginTop="10dp"
+            android:onClick="qrCode"
+            android:gravity="center"
+            android:background="#64B5F6"/>
 
         <Button
             android:id="@+id/loginStaff"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Staff Confirm"
-            android:layout_below="@+id/loginConfirm"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:onClick="staffLogin"/>
+            android:layout_marginTop="10dp"
+            android:onClick="staffLogin"
+            android:gravity="center"
+            android:background="#64B5F6"/>
 
         <Button
             android:id="@+id/viewStudents"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="View Students"
-            android:layout_below="@+id/loginStaff"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:onClick="viewStudents"/>
-    </RelativeLayout>
+            android:layout_marginTop="10dp"
+            android:onClick="viewStudents"
+            android:gravity="center"
+            android:background="#64B5F6"/>
+    </LinearLayout>
 
 </RelativeLayout>

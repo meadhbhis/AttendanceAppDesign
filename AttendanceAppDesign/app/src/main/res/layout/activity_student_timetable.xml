@@ -13,7 +13,8 @@
         android:textColor="#FFF"
         android:background="#2962FF"
         android:gravity="center"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:padding="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +32,8 @@
             android:layout_weight="1"
             android:minWidth="0dp"
             android:layout_marginLeft="30dp"
-            android:layout_gravity="center_vertical"/>
+            android:layout_gravity="center_vertical"
+            android:background="#64B5F6"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -40,7 +42,8 @@
             android:layout_weight="50"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:onClick="viewStudentProfile"/>
+            android:onClick="viewStudentProfile"
+            android:background="#64B5F6"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -48,7 +51,8 @@
             android:text="arrow"
             android:layout_weight="1"
             android:minWidth="0dp"
-            android:layout_marginRight="30dp"/>
+            android:layout_marginRight="30dp"
+            android:background="#64B5F6"/>
 
     </LinearLayout>
 

@@ -118,12 +118,43 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
+    <TableLayout
+        android:id="@+id/moduleAttendanceTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="#42A5F5">
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#BBDEFB"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Average Attendance"
+                android:paddingRight="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="percentage"
+                android:paddingLeft="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:padding="50dp"
-        android:text="SCAN QR CODE"/>
+        android:padding="20dp"
+        android:text="SCAN QR CODE"
+        android:background="#64B5F6"/>
 </LinearLayout>
