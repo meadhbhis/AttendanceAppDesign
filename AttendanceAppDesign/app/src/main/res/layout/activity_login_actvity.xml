@@ -61,6 +61,16 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             android:onClick="staffLogin"/>
+
+        <Button
+            android:id="@+id/viewStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Students"
+            android:layout_below="@+id/loginStaff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:onClick="viewStudents"/>
     </RelativeLayout>
 
 </RelativeLayout>
