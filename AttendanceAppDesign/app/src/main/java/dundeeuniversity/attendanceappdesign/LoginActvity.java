@@ -50,4 +50,10 @@ public class LoginActvity extends Activity {
 
         startActivity(intent);
     }
+
+    public void viewStudents(View view){
+        Intent intent = new Intent(this, StaffStudentListActivity.class);
+
+        startActivity(intent);
+    }
 }
