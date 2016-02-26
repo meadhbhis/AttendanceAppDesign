@@ -51,16 +51,16 @@ public class StaffViewClassActivity extends Activity {
     }
 
     public void scanQR(View v) {
-        try {
+        try{
             //start the scanning activity from the com.google.zxing.client.android.SCAN intent
             Intent intent = new Intent(ACTION_SCAN);
-            intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-            startActivityForResult(intent, 0);
-        } catch (ActivityNotFoundException anfe) {
-            //on catch, show the download dialog
-            showDialog(StaffViewClassActivity.this, "No Scanner Found", "Download a scanner code activity?", "Yes", "No").show();
+              intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+                startActivityForResult(intent, 0);
+               } catch (ActivityNotFoundException anfe) {
+              //on catch, show the download dialog
+                  showDialog(StaffViewClassActivity.this, "No Scanner Found", "Download a scanner code activity?", "Yes", "No").show();
+              }
         }
-    }
 
     //alert dialog for downloadDialog
     private static AlertDialog showDialog(final Activity act, CharSequence title, CharSequence message, CharSequence buttonYes, CharSequence buttonNo) {
