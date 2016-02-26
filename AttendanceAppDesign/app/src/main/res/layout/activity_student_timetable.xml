@@ -24,34 +24,38 @@
         >
 
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="arrow"
             android:layout_weight="1"
             android:minWidth="0dp"
             android:layout_marginLeft="30dp"
+            android:padding="10dp"
             android:layout_gravity="center_vertical"
-            android:background="#64B5F6"/>
+            android:background="#64B5F6"
+            android:src="@drawable/left_arrow"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="MENU"
+            android:text="Profile"
             android:layout_weight="50"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:onClick="viewStudentProfile"
             android:background="#64B5F6"/>
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="arrow"
             android:layout_weight="1"
             android:minWidth="0dp"
             android:layout_marginRight="30dp"
-            android:background="#64B5F6"/>
+            android:padding="10dp"
+            android:background="#64B5F6"
+            android:src="@drawable/right_arrow"/>
 
     </LinearLayout>
 
