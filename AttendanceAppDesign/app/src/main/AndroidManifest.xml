@@ -33,12 +33,6 @@
             android:label="@string/title_activity_staff_profile" >
         </activity>
         <activity
-            android:name=".ExampleProfileActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_example_profile"
-            android:theme="@style/FullscreenTheme" >
-        </activity>
-        <activity
             android:name=".StudentModuleActivity"
             android:label="@string/title_activity_student_module" >
         </activity>
@@ -65,6 +59,10 @@
         <activity
             android:name=".StudentViewClassActivity"
             android:label="@string/title_activity_student_view_class" >
+        </activity>
+        <activity
+            android:name=".StaffCreateClass"
+            android:label="@string/title_activity_staff_create_class" >
         </activity>
     </application>
 
