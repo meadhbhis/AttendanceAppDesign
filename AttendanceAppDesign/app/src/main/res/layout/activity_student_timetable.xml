@@ -115,7 +115,8 @@
         <TableRow
             android:id="@+id/row3"
             android:layout_weight="3"
-            android:background="#BBDEFB">
+            android:background="#BBDEFB"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="11:00 - 12:00"
                 android:padding="3dp"

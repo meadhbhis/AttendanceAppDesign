@@ -41,6 +41,11 @@ public class StaffTimetableActivity extends Activity {
         Intent intent = new Intent(this, StaffProfileActivity.class);
 
         startActivity(intent);
+    }
 
+    public void viewClassStaff(View view){
+        Intent intent = new Intent(this, StaffViewClassActivity.class);
+
+        startActivity(intent);
     }
 }

@@ -45,9 +45,9 @@
             android:id="@+id/loginConfirm"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="QR CODE"
+            android:text="Student Login"
             android:layout_marginTop="10dp"
-            android:onClick="qrCode"
+            android:onClick="studentLogin"
             android:gravity="center"
             android:background="#64B5F6"/>
 
@@ -55,7 +55,7 @@
             android:id="@+id/loginStaff"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Staff Confirm"
+            android:text="Staff Login"
             android:layout_marginTop="10dp"
             android:onClick="staffLogin"
             android:gravity="center"

@@ -42,4 +42,10 @@ public class StaffModuleActivity extends Activity {
 
         startActivity(intent);
     }
+
+    public void viewStudentList(View view){
+        Intent intent = new Intent(this, StaffViewStudentActivity.class);
+
+        startActivity(intent);
+    }
 }
