@@ -109,9 +109,10 @@
                 android:layout_gravity="center_vertical"/>
             <TextView
                 android:id="@+id/txtRow2"
-                android:text=""
+                android:text="Agile Programming // Dalhousie 2S14"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
@@ -128,7 +129,8 @@
                 android:id="@+id/txtRow3"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
@@ -145,7 +147,8 @@
                 android:id="@+id/txtRow4"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
@@ -162,7 +165,8 @@
                 android:id="@+id/txtRow5"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
@@ -179,7 +183,8 @@
                 android:id="@+id/txtRow6"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
@@ -196,7 +201,8 @@
                 android:id="@+id/txtRow7"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
@@ -213,14 +219,14 @@
                 android:id="@+id/txtRow8"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
 
         <TableRow
             android:id="@+id/row9"
             android:layout_weight="3"
             android:background="#BBDEFB"
-            android:layout_gravity="center_vertical"
             android:onClick="viewClassStaff">
             <TextView
                 android:text="17:00 - 18:00"
@@ -230,7 +236,8 @@
                 android:id="@+id/txtRow9"
                 android:text=""
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
         </TableRow>
     </TableLayout>
 
