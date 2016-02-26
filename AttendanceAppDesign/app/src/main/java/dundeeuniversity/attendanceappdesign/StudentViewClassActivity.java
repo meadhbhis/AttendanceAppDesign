@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class StudentViewClassActivity extends Activity {
 
-
     static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
 
     @Override
@@ -46,7 +45,7 @@ public class StudentViewClassActivity extends Activity {
     }
 
     public void scanQR(View v) {
-        try {
+        try{
             //start the scanning activity from the com.google.zxing.client.android.SCAN intent
             Intent intent = new Intent(ACTION_SCAN);
             intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
