@@ -156,5 +156,6 @@
         android:layout_marginRight="20dp"
         android:padding="20dp"
         android:text="SCAN QR CODE"
-        android:background="#64B5F6"/>
+        android:background="#64B5F6"
+        android:onClick="scanQR"/>
 </LinearLayout>
