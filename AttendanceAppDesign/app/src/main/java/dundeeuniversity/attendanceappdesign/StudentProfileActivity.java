@@ -7,39 +7,42 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+//Refactored by Will
+//1.36KB to 1.23KB
+
 public class StudentProfileActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_profile);
-    }
+ @Override
+ protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_student_profile);
+ }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_student_profile, menu);
-        return true;
-    }
+ @Override
+ public boolean onCreateOptionsMenu(Menu menu) {
+  // Inflate the menu; this adds items to the action bar if it is present.
+  getMenuInflater().inflate(R.menu.menu_student_profile, menu);
+  return true;
+ }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+ @Override
+ public boolean onOptionsItemSelected(MenuItem item) {
+  // Handle action bar item clicks here. The action bar will
+  // automatically handle clicks on the Home/Up button, so long
+  // as you specify a parent activity in AndroidManifest.xml.
+  int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+  //noinspection SimplifiableIfStatement
+  if (id == R.id.action_settings) {
+   return true;
+  }
 
-        return super.onOptionsItemSelected(item);
-    }
+  return super.onOptionsItemSelected(item);
+ }
 
-    public void viewStudentModule(View view){
-        Intent intent = new Intent(this, StudentModuleActivity.class);
+ public void viewStudentModule(View view) {
+  Intent intent = new Intent(this, StudentModuleActivity.class);
 
-        startActivity(intent);
-    }
+  startActivity(intent);
+ }
 }

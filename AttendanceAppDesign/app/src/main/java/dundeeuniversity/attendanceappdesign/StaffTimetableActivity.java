@@ -7,45 +7,48 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+//Refactored by Will
+//1.52KB to 1.4KB
+
 public class StaffTimetableActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_staff_timetable);
-    }
+ @Override
+ protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_staff_timetable);
+ }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_staff_timetable, menu);
-        return true;
-    }
+ @Override
+ public boolean onCreateOptionsMenu(Menu menu) {
+  // Inflate the menu; this adds items to the action bar if it is present.
+  getMenuInflater().inflate(R.menu.menu_staff_timetable, menu);
+  return true;
+ }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+ @Override
+ public boolean onOptionsItemSelected(MenuItem item) {
+  // Handle action bar item clicks here. The action bar will
+  // automatically handle clicks on the Home/Up button, so long
+  // as you specify a parent activity in AndroidManifest.xml.
+  int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+  //noinspection SimplifiableIfStatement
+  if (id == R.id.action_settings) {
+   return true;
+  }
 
-        return super.onOptionsItemSelected(item);
-    }
+  return super.onOptionsItemSelected(item);
+ }
 
-    public void viewStaffProfile(View view){
-        Intent intent = new Intent(this, StaffProfileActivity.class);
+ public void viewStaffProfile(View view) {
+  Intent intent = new Intent(this, StaffProfileActivity.class);
 
-        startActivity(intent);
-    }
+  startActivity(intent);
+ }
 
-    public void viewClassStaff(View view){
-        Intent intent = new Intent(this, StaffViewClassActivity.class);
+ public void viewClassStaff(View view) {
+  Intent intent = new Intent(this, StaffViewClassActivity.class);
 
-        startActivity(intent);
-    }
+  startActivity(intent);
+ }
 }
