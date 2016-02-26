@@ -6,13 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class LoginActvity extends Activity {
+
+
+    Button btnLogin;
+    EditText txtUsername, txtPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_actvity);
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_actvity);
+        txtUsername = (EditText) findViewById(R.id.txtUsername);
+        txtPassword = (EditText) findViewById(R.id.txtPassword);
+        btnLogin = (Button) findViewById(R.id.loginConfirm);
     }
 
     @Override
@@ -37,23 +49,27 @@ public class LoginActvity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    //MEADHBH'S BUTTON CODE
+    //Meadhbh and John's Code
     public void studentLogin(View view){
         Intent intent = new Intent(this, StudentTimetableActivity.class);
 
-        startActivity(intent);
-
+        if (txtUsername.getText().toString().equals("120012544") && txtPassword.getText().toString().equals("1234")) {
+            startActivity(intent);
+        } else {
+            btnLogin.setText("Incorrect - Please Try Again");
+        }
     }
 
+    //Meadhbh and John's Code
     public void staffLogin(View view){
         Intent intent = new Intent(this, StaffTimetableActivity.class);
 
-        startActivity(intent);
+        if (txtUsername.getText().toString().equals("09H017") && txtPassword.getText().toString().equals("1234")) {
+            startActivity(intent);
+        } else {
+            btnLogin.setText("Incorrect - Please Try Again");
+        }
     }
 
-    public void viewStudents(View view){
-        Intent intent = new Intent(this, StaffStudentListActivity.class);
 
-        startActivity(intent);
-    }
 }
