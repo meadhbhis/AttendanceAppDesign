@@ -83,12 +83,14 @@
             android:id="@+id/row1"
             android:layout_weight="3"
             android:background="#BBDEFB"
-            android:layout_gravity="center_vertical">
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="09:00 - 10:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow1"
                 android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
@@ -99,15 +101,15 @@
             android:id="@+id/row2"
             android:layout_weight="3"
             android:background="#E3F2FD"
-            android:layout_gravity="center_vertical">
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="10:00 - 11:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/txtRow2"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -116,14 +118,15 @@
             android:id="@+id/row3"
             android:layout_weight="3"
             android:background="#BBDEFB"
+            android:layout_gravity="center_vertical"
             android:onClick="viewClassStaff">
             <TextView
                 android:text="11:00 - 12:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:text="Agile Programming // Dalhousie 2S14"
-                android:layout_gravity="center_vertical"
+                android:id="@+id/txtRow3"
+                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -131,14 +134,16 @@
         <TableRow
             android:id="@+id/row4"
             android:layout_weight="3"
-            android:background="#E3F2FD">
+            android:background="#E3F2FD"
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="12:00 - 13:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow4"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -146,14 +151,16 @@
         <TableRow
             android:id="@+id/row5"
             android:layout_weight="3"
-            android:background="#BBDEFB">
+            android:background="#BBDEFB"
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="13:00 - 14:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow5"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -161,14 +168,16 @@
         <TableRow
             android:id="@+id/row6"
             android:layout_weight="3"
-            android:background="#E3F2FD">
+            android:background="#E3F2FD"
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="14:00 - 15:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow6"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -176,14 +185,16 @@
         <TableRow
             android:id="@+id/row7"
             android:layout_weight="3"
-            android:background="#BBDEFB">
+            android:background="#BBDEFB"
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="15:00 - 16:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow7"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -191,14 +202,16 @@
         <TableRow
             android:id="@+id/row8"
             android:layout_weight="3"
-            android:background="#E3F2FD">
+            android:background="#E3F2FD"
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="16:00 - 17:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow8"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -206,14 +219,16 @@
         <TableRow
             android:id="@+id/row9"
             android:layout_weight="3"
-            android:background="#BBDEFB">
+            android:background="#BBDEFB"
+            android:layout_gravity="center_vertical"
+            android:onClick="viewClassStaff">
             <TextView
                 android:text="17:00 - 18:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
+                android:id="@+id/txtRow9"
                 android:text=""
-                android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
