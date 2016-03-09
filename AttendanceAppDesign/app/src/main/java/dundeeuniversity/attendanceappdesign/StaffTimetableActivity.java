@@ -2,17 +2,50 @@ package dundeeuniversity.attendanceappdesign;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class StaffTimetableActivity extends Activity {
+
+    final String TAG = this.getClass().getName();
+    SharedPreferences loginPrefs;
+    SharedPreferences.Editor loginEditor;
+     Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff_timetable);
+
+        loginPrefs=getSharedPreferences("loginPrefs", MODE_PRIVATE);
+
+        Log.d(TAG, loginPrefs.getString("USERNAME_KEY", ""));
+        Log.d(TAG, loginPrefs.getString("PASSWORD_KEY", ""));
+
+        logout = (Button) findViewById(R.id.btnLogout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                // clears the shared preferences and send the user back to the login page
+                loginEditor = loginPrefs.edit();
+                loginEditor.clear();
+                loginEditor.commit();
+
+                Intent in = new Intent(StaffTimetableActivity.this, LoginActivity.class);
+                startActivity(in);
+            }
+        });
+
+
+
+
     }
 
     @Override
