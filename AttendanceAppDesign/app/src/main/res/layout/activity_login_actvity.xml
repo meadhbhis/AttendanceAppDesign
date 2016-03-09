@@ -2,10 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-
-
+    android:orientation="vertical"
+    android:layout_margin="50dp"
+    android:background="@drawable/watermark">
 
         <EditText
             android:id="@+id/txtUsername"
@@ -13,7 +12,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_weight="3"/>
 
         <EditText
             android:id="@+id/txtPassword"
@@ -24,7 +24,8 @@
             android:layout_margin="30dp"
             android:maxLength="4"
             android:gravity="center"
-            android:password="true" />
+            android:password="true"
+            android:layout_weight="3"/>
 
         <Button
             android:id="@+id/loginConfirm"
@@ -34,6 +35,6 @@
             android:layout_margin="30dp"
             android:onClick="studentLogin"
             android:gravity="center"
-            android:background="#64B5F6"/>
-
+            android:background="#64B5F6"
+            android:layout_weight="1"/>
 </LinearLayout>
