@@ -4,16 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="University of Dundee"
-        android:id="@+id/textView"
-        android:textColor="#FFF"
-        android:background="#2962FF"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:padding="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
