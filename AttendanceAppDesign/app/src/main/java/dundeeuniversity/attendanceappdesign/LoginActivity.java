@@ -3,81 +3,28 @@ package dundeeuniversity.attendanceappdesign;
 //Login Activity hijacked by Will Hulme to make it work properly
 //13:00 8/3/2016
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LoginActivity extends Activity implements View.OnClickListener {
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
 
-    //Private JSON String
-    private String myJSONString;
+public class LoginActivity extends AppCompatActivity {
 
-    //Private variables for holding login information
-    private static final String JSON_ARRAY ="Result";
-    private static final String ID = "ID";
-    private static final String USERNAME= "Matriculation";
-    private static final String PASSWORD = "Passcode";
+    private EditText matriculation,passcode;
+    private Button login;
+    private RequestQueue requestQueue;
+    private static final String URL = "https://zeno.computing.dundee.ac.uk/2015-agile/team4/user_control.php";
+    private StringRequest request;
 
-    private JSONArray users = null;
-
-    private int TRACK = 0;
-
-    Button btnLogin;
-    EditText txtUsername, txtPassword;
-
-    //Create function
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_actvity);
+        setContentView(R.layout.activity_login_activity);
 
-        myJSONString = "My_JSON";
-
-        txtUsername = (EditText) findViewById(R.id.txtUsername);
-        txtPassword = (EditText) findViewById(R.id.txtPassword);
-
-        btnLogin = (Button) findViewById(R.id.loginConfirm);
-        btnLogin.setOnClickListener(this);
-
-        extractJSON();
-    }
-
-    private void extractJSON(){
-        try {
-            JSONObject jsonObject = new JSONObject(myJSONString);
-            users = jsonObject.getJSONArray(JSON_ARRAY);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void onClick(View v) {
-        Intent intent = new Intent(this, StudentTimetableActivity.class);
-        if (v == btnLogin) {
-            startActivity(intent);
-
-        } else {
-            Context context = getApplicationContext();
-            CharSequence text = "Login Error!";
-            int duration = Toast.LENGTH_SHORT;
-            Toast.makeText(context, text, duration).show();
-        }
+        matriculation = (EditText) findViewById(R.id.matriculation);
+        
     }
 }
