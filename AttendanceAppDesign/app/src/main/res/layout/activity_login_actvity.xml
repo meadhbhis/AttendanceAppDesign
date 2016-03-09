@@ -9,9 +9,9 @@
 
         <EditText
             android:id="@+id/txtUsername"
+            android:hint="Matriculation Number"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="USERNAME"
             android:layout_margin="30dp"
             android:gravity="center"/>
 
@@ -19,29 +19,21 @@
             android:id="@+id/txtPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="four"
+            android:hint="Passcode"
             android:inputType="numberPassword"
             android:layout_margin="30dp"
             android:maxLength="4"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:password="true" />
 
         <Button
             android:id="@+id/loginConfirm"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Student Login"
+            android:text="Login"
             android:layout_margin="30dp"
             android:onClick="studentLogin"
             android:gravity="center"
             android:background="#64B5F6"/>
 
-        <Button
-            android:id="@+id/loginStaff"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Staff Login"
-            android:layout_margin="30dp"
-            android:onClick="staffLogin"
-            android:gravity="center"
-            android:background="#64B5F6"/>
 </LinearLayout>
