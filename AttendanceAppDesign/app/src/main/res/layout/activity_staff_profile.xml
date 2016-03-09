@@ -5,119 +5,72 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true">
 
-    <TextView
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="University of Dundee"
-        android:id="@+id/textView"
-        android:textColor="#FFF"
-        android:background="#2962FF"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:padding="10dp"/>
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
 
-
-
-    <TableLayout
-        android:id="@+id/nameTable"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:background="#42A5F5">
-
-        <TextView
-            android:layout_width="fill_parent"
+        <ImageView
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Karen Petrie"
-            android:padding="10dp"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:src="@drawable/photo"
+            android:cropToPadding="true"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"/>
 
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB"
-            android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
 
             <TextView
-                android:text="Staff ID"
-                android:paddingRight="10dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:text="09H017"
-                android:paddingLeft="10dp"/>
-        </TableRow>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#E3F2FD">
-
-            <TextView
-                android:text="Password"
-                android:paddingRight="10dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:text="1234"
-                android:paddingLeft="10dp" />
-        </TableRow>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB">
-
-            <TextView
-                android:text="Email"
-                android:layout_marginRight="10dp"
-                android:textStyle="bold"/>
-
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="1"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:text="karenpetrie@computing.dundee.ac.uk"
-                android:layout_marginLeft="10dp"
-                android:singleLine="false" />
+                android:layout_height="wrap_content"
+                android:text="Staff ID"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_weight="1"/>
 
-        </TableRow>
-    </TableLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
     <TableLayout
         android:id="@+id/moduleTable"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:background="#42A5F5">
+        android:background="#E3F2FD">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Module List"
-            android:padding="10dp"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:text="Your Teaching Modules"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:background="#90CAF9"/>
 
         <TableRow
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:paddingBottom="10dp"
-            android:background="#BBDEFB"
-            android:gravity="center_vertical"
-            android:onClick="viewStaffModule">
+            android:gravity="center_vertical">
 
             <TextView
                 android:text="AC31007"
@@ -133,8 +86,7 @@
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#E3F2FD">
+            android:paddingBottom="10dp">
 
             <TextView
                 android:text="AC31009"
@@ -150,8 +102,7 @@
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB">
+            android:paddingBottom="10dp">
 
             <TextView
                 android:text="AC32005"
@@ -159,13 +110,34 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:text="Human Computer Interaction And Usability Engineering"
                 android:layout_marginLeft="20dp"
                 android:singleLine="false"/>
-
         </TableRow>
     </TableLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="View All Modules"
+            android:background="#64B5F6"
+            android:padding="10dp"
+            android:layout_gravity="center|bottom"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="Log Out"
+            android:padding="10dp"
+            android:background="#E57373"
+            android:layout_gravity="center|bottom"/>
+    </LinearLayout>
 
 </LinearLayout>
