@@ -4,16 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <!-- Banner for top of pages-->
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="University of Dundee"
-        android:id="@+id/textView"
-        android:textColor="#FFF"
-        android:background="#2962FF"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:padding="10dp"/>
+        android:background="#64B5F6">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:background="#64B5F6"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Class"
+            android:padding="10dp"
+            android:gravity="center|right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
 
     <TableLayout
         android:id="@+id/moduleDetailsTable"
@@ -153,6 +164,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
@@ -164,6 +176,8 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="Delete current Class"

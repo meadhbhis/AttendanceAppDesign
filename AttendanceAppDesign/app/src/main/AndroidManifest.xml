@@ -13,6 +13,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -63,6 +64,10 @@
         <activity
             android:name=".StaffCreateClass"
             android:label="@string/title_activity_staff_create_class" >
+        </activity>
+        <activity
+            android:name=".StaffViewModuleList"
+            android:label="@string/title_activity_staff_view_module_list" >
         </activity>
     </application>
 

@@ -127,6 +127,7 @@
             android:layout_margin="10dp"
             android:text="View All Modules"
             android:background="#64B5F6"
+            android:onClick="viewClassStaff"
             android:padding="10dp"
             android:layout_gravity="center|bottom"/>
         <Button
