@@ -2,108 +2,79 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
 
-
-
-
-
-    <TableLayout
-        android:id="@+id/nameTable"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:background="#42A5F5">
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
 
-        <TextView
-            android:layout_width="fill_parent"
+        <ImageView
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Meadhbh Murphy"
-            android:padding="10dp"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:src="@drawable/photo"
+            android:cropToPadding="true"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"/>
 
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB"
-            android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
 
             <TextView
-                android:text="Student ID"
-                android:paddingRight="20dp"
-                android:textStyle="bold"/>
-
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="1"/>
             <TextView
-                android:text="120012544"
-                android:paddingLeft="20dp"/>
-        </TableRow>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#E3F2FD">
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matriculation Number"
+                android:layout_weight="1"/>
             <TextView
-                android:text="Password"
-                android:paddingRight="20dp"
-                android:textStyle="bold"/>
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:layout_weight="1"/>
             <TextView
-                android:text="1234"
-                android:paddingLeft="20dp" />
-        </TableRow>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB">
-
-            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Email"
-                android:layout_marginRight="20dp"
-                android:textStyle="bold"/>
+                android:layout_weight="1"/>
 
-            <TextView
-                android:text="m.x.murphy@dundee.ac.uk"
-                android:layout_marginLeft="20dp" />
+        </LinearLayout>
 
-        </TableRow>
-    </TableLayout>
+
+    </LinearLayout>
+
 
     <TableLayout
         android:id="@+id/moduleTable"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:background="#42A5F5">
+        android:background="#E3F2FD">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Module List"
-            android:padding="10dp"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:background="#90CAF9"/>
 
         <TableRow
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:paddingBottom="10dp"
-            android:background="#BBDEFB"
             android:gravity="center_vertical"
             android:onClick="viewStudentModule">
 
@@ -121,8 +92,7 @@
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#E3F2FD">
+            android:paddingBottom="10dp">
 
             <TextView
                 android:text="AC31009"
@@ -138,8 +108,7 @@
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB">
+            android:paddingBottom="10dp">
 
             <TextView
                 android:text="AC32005"
@@ -155,5 +124,49 @@
         </TableRow>
     </TableLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Overall Attendance123456789"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="View Timetable"
+                android:background="#64B5F6"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="Scan QR"
+                android:background="#64B5F6"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="Log Out"
+                android:padding="10dp"
+                android:background="#E57373"/>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
