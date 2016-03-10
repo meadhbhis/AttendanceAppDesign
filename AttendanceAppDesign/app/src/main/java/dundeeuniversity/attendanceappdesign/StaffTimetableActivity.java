@@ -27,7 +27,7 @@ public class StaffTimetableActivity extends Activity {
         Log.d(TAG, loginPrefs.getString("USERNAME_KEY", ""));
         Log.d(TAG, loginPrefs.getString("PASSWORD_KEY", ""));
 
-        logout = (Button) findViewById(R.id.btnLogout);
+      /* *//* logout = (Button) findViewById(R.id.btnLogout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,8 +40,8 @@ public class StaffTimetableActivity extends Activity {
 
                 Intent in = new Intent(StaffTimetableActivity.this, LoginActivity.class);
                 startActivity(in);
-            }
-        });
+            }*//*
+        });*/
 
 
 

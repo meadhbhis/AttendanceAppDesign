@@ -142,9 +142,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:text="Timetable"
+                android:text="View Timetable"
                 android:background="#64B5F6"
-                android:onClick="viewStudentTimetable"/>
+                android:onClick="viewStudentTimetable"
+                android:padding="10dp"/>
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

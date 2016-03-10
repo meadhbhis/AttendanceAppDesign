@@ -144,4 +144,11 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
 
 
     }
+
+//    Get rid of this at some point when the login isnt being fucked around with by WILL
+    public void byPassLogin(View view){
+        Intent intent = new Intent(this, StudentProfileActivity.class);
+
+        startActivity(intent);
+    }
 }
