@@ -142,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:text="View Timetable"
+                android:text="Timetable"
                 android:background="#64B5F6"
                 android:onClick="viewStudentTimetable"
                 android:padding="10dp"/>
@@ -160,6 +160,7 @@
                 android:layout_weight="1"
                 android:layout_margin="10dp"
                 android:text="Log Out"
+                android:onClick="returnToLogin"
                 android:background="#E57373"/>
 
         </LinearLayout>

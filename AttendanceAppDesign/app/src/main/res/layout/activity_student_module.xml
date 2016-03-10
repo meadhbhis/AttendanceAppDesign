@@ -139,14 +139,17 @@
         </TableRow>
     </TableLayout>
 
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
     <TableLayout
-        android:id="@+id/moduleAttendanceTable"
+
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
         android:background="#42A5F5">
@@ -154,47 +157,54 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Attendance Details"
+            android:text="Your Attendance"
             android:padding="10dp"
             android:gravity="center"
             android:textSize="18dp"
             android:textStyle="bold"/>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#BBDEFB"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:text="Personal Attendance"
-                android:paddingRight="20dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:text="percentage"
-                android:paddingLeft="20dp"/>
-        </TableRow>
-
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:background="#E3F2FD">
-
-            <TextView
-                android:text="Average Attendance"
-                android:paddingRight="20dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:text="percentage"
-                android:paddingLeft="20dp" />
-        </TableRow>
     </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Module Attendance: "/>
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo"
+        android:cropToPadding="true"
+
+
+        android:layout_marginLeft="100dp"
+
+
+        android:adjustViewBounds="true"
+        android:layout_gravity="top"
+       />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall Attendance: "/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo"
+            android:cropToPadding="true"
+
+
+            android:layout_marginLeft="100dp"
+
+
+            android:adjustViewBounds="true"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
 
 
 </LinearLayout>
