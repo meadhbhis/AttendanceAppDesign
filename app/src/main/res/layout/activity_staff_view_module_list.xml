@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dundeeuniversity.attendanceappdesign.StaffViewModuleList"
+    android:orientation="vertical">
+
+    <!-- Banner for top of pages-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#64B5F6">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:background="#64B5F6"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Modules"
+            android:padding="10dp"
+            android:gravity="center|right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/moduleDetailsTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="#42A5F5">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Module List"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#BBDEFB"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Year"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Module Code"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <TextView
+                android:text="Lecturer"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#E3F2FD"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="3"
+                android:paddingRight="20dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="AC32001"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Dr Karen Petrie"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:background="#E3F2FD"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="2"
+                android:paddingRight="20dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="AC22001"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Dr Iain Murray"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
