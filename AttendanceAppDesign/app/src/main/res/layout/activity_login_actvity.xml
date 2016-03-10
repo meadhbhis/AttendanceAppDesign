@@ -45,4 +45,10 @@
             android:gravity="center"
             android:background="#64B5F6"
             android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SKIP THE SHITTY LOGIN"
+        android:onClick="byPassLogin"/>
 </LinearLayout>

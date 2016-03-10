@@ -46,12 +46,8 @@
                 android:layout_height="wrap_content"
                 android:text="Email"
                 android:layout_weight="1"/>
-
         </LinearLayout>
-
-
     </LinearLayout>
-
 
     <TableLayout
         android:id="@+id/moduleTable"
@@ -146,8 +142,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:text="View Timetable"
+                android:text="Timetable"
                 android:background="#64B5F6"
+                android:onClick="viewStudentTimetable"
                 android:padding="10dp"/>
             <Button
                 android:layout_width="fill_parent"
@@ -155,15 +152,15 @@
                 android:layout_weight="1"
                 android:layout_margin="10dp"
                 android:text="Scan QR"
-                android:background="#64B5F6"
-                android:padding="10dp"/>
+                android:onClick="scanQR"
+                android:background="#64B5F6"/>
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
                 android:text="Log Out"
-                android:padding="10dp"
+                android:onClick="returnToLogin"
                 android:background="#E57373"/>
 
         </LinearLayout>

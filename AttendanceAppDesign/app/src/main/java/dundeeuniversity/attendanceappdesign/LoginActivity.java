@@ -137,4 +137,11 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         saved = isChecked;
     }
+
+//    Get rid of this at some point when the login isnt being fucked around with by WILL
+    public void byPassLogin(View view){
+        Intent intent = new Intent(this, StudentProfileActivity.class);
+
+        startActivity(intent);
+    }
 }
