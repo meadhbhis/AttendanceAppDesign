@@ -27,7 +27,15 @@
             android:password="true"
             android:layout_weight="3"/>
 
-        <Button
+    <CheckBox
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:id="@+id/rememberMe"
+        android:layout_weight="3"
+        android:layout_gravity="right" />
+
+    <Button
             android:id="@+id/loginConfirm"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

@@ -15,6 +15,12 @@
             android:text="home"
             android:background="#64B5F6"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out "
+            android:id="@+id/btnLogout" />
+
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
