@@ -46,12 +46,8 @@
                 android:layout_height="wrap_content"
                 android:text="Email"
                 android:layout_weight="1"/>
-
         </LinearLayout>
-
-
     </LinearLayout>
-
 
     <TableLayout
         android:id="@+id/moduleTable"
