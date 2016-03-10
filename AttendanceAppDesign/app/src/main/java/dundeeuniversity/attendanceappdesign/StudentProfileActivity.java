@@ -42,4 +42,10 @@ public class StudentProfileActivity extends Activity {
 
         startActivity(intent);
     }
+
+    public void viewStudentTimetable(View view){
+        Intent intent = new Intent(this, StudentTimetableActivity.class);
+
+        startActivity(intent);
+    }
 }
