@@ -41,14 +41,14 @@ public class StudentProfileActivity extends Activity {
         modules = moduleModel.retrieveModules();
         aStudent = studentModel.retrieveStudent();
 
-        studentNameTextView.setText(aStudent.getFirstname() + " " + aStudent.getLastname());
+        studentNameTextView.setText("Hello");
         matricNoTextView.setText(aStudent.getMatricNo());
         courseNameTextView.setText(aStudent.getCourse());
         emailAddressTextView.setText(aStudent.getEmail());
 
         TableLayout table = (TableLayout) findViewById(R.id.moduleTable);
 
-        for(int i=0; i<6; i++){
+        for(int i=0; i<3; i++){
             TableRow row = new TableRow(this);
             Module m = new Module();
             m = modules.get(i);
