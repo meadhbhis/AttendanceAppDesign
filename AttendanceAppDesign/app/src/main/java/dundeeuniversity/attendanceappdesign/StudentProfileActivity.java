@@ -48,4 +48,16 @@ public class StudentProfileActivity extends Activity {
 
         startActivity(intent);
     }
+
+    public void returnToLogin(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void scanQR(View view){
+        Intent intent = new Intent(this, ScanQRTestActivity.class);
+
+        startActivity(intent);
+    }
 }

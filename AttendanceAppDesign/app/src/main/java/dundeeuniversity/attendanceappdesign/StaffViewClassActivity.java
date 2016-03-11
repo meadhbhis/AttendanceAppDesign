@@ -97,4 +97,10 @@ public class StaffViewClassActivity extends Activity {
             }
         }
     }
+
+    public void viewStaffProfile(View view){
+        Intent intent = new Intent(this, StaffProfileActivity.class);
+
+        startActivity(intent);
+    }
 }

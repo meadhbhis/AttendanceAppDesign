@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dundeeuniversity.attendanceappdesign" >
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,6 +13,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -62,6 +64,10 @@
         <activity
             android:name=".StaffCreateClass"
             android:label="@string/title_activity_staff_create_class" >
+        </activity>
+        <activity
+            android:name=".WhereisIt"
+            android:label="@string/title_activity_whereis_it" >
         </activity>
     </application>
 

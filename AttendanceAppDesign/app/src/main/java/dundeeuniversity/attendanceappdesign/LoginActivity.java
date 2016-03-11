@@ -79,8 +79,6 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
 
         }
 
-
-
         requestQueue = Volley.newRequestQueue(this);
         login.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -99,21 +97,19 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
                     Log.d(TAG, loginPrefs.getString(PASSWORD_KEY, ""));
 
                 }
-
-
                 request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if(jsonObject.names().get(0).equals("success")) {
-                                Toast.makeText(getApplicationContext(),"SUCCESS "+jsonObject.getString("success"),Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),jsonObject.getString("success"),Toast.LENGTH_SHORT).show();
 
                                 // Code above should go here i think after the successful checking of the username and password
 
                                 startActivity(new Intent(getApplicationContext(),StudentTimetableActivity.class));
                             } else {
-                                Toast.makeText(getApplicationContext(),"ERROR "+jsonObject.getString("error"),Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),jsonObject.getString("error"),Toast.LENGTH_SHORT).show();
                             }
                         } catch(JSONException e) {
                             e.printStackTrace();
@@ -139,10 +135,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
         saved = isChecked;
-
-
     }
 
 //    Get rid of this at some point when the login isnt being fucked around with by WILL

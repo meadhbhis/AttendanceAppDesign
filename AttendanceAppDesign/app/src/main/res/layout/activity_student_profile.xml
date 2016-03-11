@@ -80,6 +80,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleTitle1"
                 android:text="Agile Software Engineering"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -96,6 +97,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleTitle2"
                 android:text="Games Programming"
                 android:paddingLeft="20dp" />
         </TableRow>
@@ -112,6 +114,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleTitle3"
                 android:layout_width="wrap_content"
                 android:text="Human Computer Interaction And Usability Engineering"
                 android:layout_marginLeft="20dp"
@@ -129,8 +132,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="Overall Attendance123456789"
-            android:layout_margin="10dp"/>
+            android:text="Overall Attendance"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -142,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:text="View Timetable"
+                android:text="Timetable"
                 android:background="#64B5F6"
                 android:onClick="viewStudentTimetable"
                 android:padding="10dp"/>
@@ -160,6 +165,7 @@
                 android:layout_weight="1"
                 android:layout_margin="10dp"
                 android:text="Log Out"
+                android:onClick="returnToLogin"
                 android:background="#E57373"/>
 
         </LinearLayout>
