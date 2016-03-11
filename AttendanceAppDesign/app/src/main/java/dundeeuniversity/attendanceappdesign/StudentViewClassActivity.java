@@ -91,4 +91,10 @@ public class StudentViewClassActivity extends Activity {
             }
         }
     }
+
+    public void viewStudentProfile(View view){
+        Intent intent = new Intent(this, StudentProfileActivity.class);
+
+        startActivity(intent);
+    }
 }

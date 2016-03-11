@@ -88,7 +88,10 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:background="#E3F2FD">
+        android:background="#E3F2FD"
+        android:onClick="viewStudentClass">
+        <!-- May have to be changed to individual rows not sure yet-->
+
 
         <TableRow
             android:id="@+id/row1"
@@ -158,8 +161,7 @@
             <TextView
                 android:text="11:00 - 12:00"
                 android:padding="3dp"
-                android:layout_gravity="center_vertical"
-                android:onClick="viewClassStudent"/>
+                android:layout_gravity="center_vertical"/>
             <TextView
                 android:text=""
                 android:layout_gravity="center_vertical"
@@ -184,7 +186,8 @@
         <TableRow
             android:id="@+id/row4"
             android:layout_weight="3"
-            android:background="#FFCC80">
+            android:background="#FFCC80"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="12:00 - 13:00"
                 android:padding="3dp"
