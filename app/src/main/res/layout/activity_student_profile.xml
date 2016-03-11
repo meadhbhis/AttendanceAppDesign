@@ -27,21 +27,25 @@
             android:layout_margin="10dp">
 
             <TextView
+                android:id="@+id/txtName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/txtMatricNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Matriculation Number"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/txtCourseName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Course"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/txtEmailAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"

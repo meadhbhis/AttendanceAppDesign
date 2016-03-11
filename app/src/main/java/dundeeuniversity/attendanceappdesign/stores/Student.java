@@ -11,7 +11,7 @@ public class Student {
     private String lastname;
     private String email;
     private String course;
-    private int matricNo;
+    private String matricNo;
     private int isInternationalStudent;
 
     public int getStudentID() {
@@ -54,11 +54,11 @@ public class Student {
         this.course = course;
     }
 
-    public int getMatricNo() {
+    public String getMatricNo() {
         return matricNo;
     }
 
-    public void setMatricNo(int matricNo) {
+    public void setMatricNo(String matricNo) {
         this.matricNo = matricNo;
     }
 
@@ -74,7 +74,7 @@ public class Student {
 
     }
 
-    public Student(int studentID, String firstname, String lastname, String email, String course, int matricNo, int isInternationalStudent){
+    public Student(int studentID, String firstname, String lastname, String email, String course, String matricNo, int isInternationalStudent){
         this.studentID = studentID;
         this.firstname = firstname;
         this.lastname = lastname;

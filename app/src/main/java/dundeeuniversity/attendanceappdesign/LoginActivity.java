@@ -30,7 +30,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
-
     private EditText matriculation,passcode;
     private Button login;
     private RequestQueue requestQueue;
@@ -52,6 +51,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     protected void onCreate(final Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_actvity);
+        startActivity(new Intent(getApplicationContext(), StudentTimetableActivity.class));
 
         matriculation = (EditText) findViewById(R.id.txtUsername);
         passcode = (EditText) findViewById(R.id.txtPassword);
