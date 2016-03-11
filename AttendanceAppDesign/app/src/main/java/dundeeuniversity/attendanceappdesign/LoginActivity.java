@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     private EditText matriculation,passcode;
     private Button login;
     private RequestQueue requestQueue;
-    private static final String URL = "https://zeno.computing.dundee.ac.uk/2015-agile/team4/user_control.php";
+    private static final String URL = "https://zeno.computing.dundee.ac.uk/2015-agile/team4/login.php";
     private StringRequest request;
 
     final String TAG = this.getClass().getName();
@@ -46,7 +46,6 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     private final static String SAVED_KEY="saved";
     private Intent logIntent;
     private boolean saved;
-
 
     @Override
     protected void onCreate(final Bundle savedInstanceState){
@@ -97,16 +96,14 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
                     Log.d(TAG, loginPrefs.getString(PASSWORD_KEY, ""));
 
                 }
-                request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>(){
+                request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>()
+                {
                     @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if(jsonObject.names().get(0).equals("success")) {
                                 Toast.makeText(getApplicationContext(),jsonObject.getString("success"),Toast.LENGTH_SHORT).show();
-
-                                // Code above should go here i think after the successful checking of the username and password
-
                                 startActivity(new Intent(getApplicationContext(),StudentTimetableActivity.class));
                             } else {
                                 Toast.makeText(getApplicationContext(),jsonObject.getString("error"),Toast.LENGTH_SHORT).show();
@@ -115,11 +112,13 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
                             e.printStackTrace();
                         }
                     }
-                    }, new Response.ErrorListener(){
+                }, new Response.ErrorListener()
+                {
                         @Override
                                 public void onErrorResponse(VolleyError error){
                         }
-                }){
+                })
+                {
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         HashMap<String,String> hashMap = new HashMap<String,String>();
@@ -136,12 +135,5 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         saved = isChecked;
-    }
-
-//    Get rid of this at some point when the login isnt being fucked around with by WILL
-    public void byPassLogin(View view){
-        Intent intent = new Intent(this, StudentProfileActivity.class);
-
-        startActivity(intent);
     }
 }
