@@ -27,16 +27,19 @@
             android:layout_margin="10dp">
 
             <TextView
+                android:id="@+id/staffName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/staffID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Staff ID"
                 android:layout_weight="1"/>
             <TextView
+                android:id="@+id/staffEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
@@ -73,11 +76,13 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/moduleCode1"
                 android:text="AC31007"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleTitle1"
                 android:text="Agile Software Engineering"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -89,11 +94,13 @@
             android:paddingBottom="10dp">
 
             <TextView
+                android:id="@+id/moduleCode2"
                 android:text="AC31009"
                 android:paddingRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleTitle2"
                 android:text="Games Programming"
                 android:paddingLeft="20dp" />
         </TableRow>
@@ -105,11 +112,13 @@
             android:paddingBottom="10dp">
 
             <TextView
+                android:id="@+id/moduleCode3"
                 android:text="AC32005"
                 android:layout_marginRight="20dp"
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleTitle3"
                 android:layout_width="wrap_content"
                 android:text="Human Computer Interaction And Usability Engineering"
                 android:layout_marginLeft="20dp"
@@ -131,6 +140,7 @@
             android:padding="10dp"
             android:layout_gravity="center|bottom"/>
         <Button
+            android:onClick="returnToLogin"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

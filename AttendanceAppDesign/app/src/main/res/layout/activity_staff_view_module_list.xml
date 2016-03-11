@@ -80,16 +80,19 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/yearGroup"
                 android:text="3"
                 android:paddingRight="20dp"
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/moduleCode"
                 android:text="AC32001"
                 android:paddingLeft="20dp"
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/moduleLecturer"
                 android:text="Dr Karen Petrie"
                 android:layout_weight="1"/>
         </TableRow>

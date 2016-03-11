@@ -27,6 +27,7 @@
             android:textStyle="bold"
             android:layout_marginRight="20dp"/>
     </LinearLayout>
+    <!-- End of banner-->
 
     <TableLayout
         android:id="@+id/moduleDetailsTable"
@@ -41,6 +42,7 @@
         android:background="#42A5F5">
 
         <TextView
+            android:id="@+id/moduleTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Agile Software Engineering"
@@ -63,6 +65,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleCode"
                 android:text="AC31007"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -80,6 +83,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleLecturer"
                 android:text="Dr Mark Snaith"
                 android:paddingLeft="20dp" />
         </TableRow>
@@ -97,6 +101,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleEmail"
                 android:layout_width="wrap_content"
                 android:text="m.snaith@dundee.ac.uk"
                 android:layout_marginLeft="20dp"
@@ -116,6 +121,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleRoom"
                 android:text="2.15 QMB"
                 android:paddingLeft="20dp" />
         </TableRow>
@@ -134,6 +140,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleWeek"
                 android:text="5/12"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -142,6 +149,8 @@
 
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
+
+    <!-- Also needs a layout change-->
     <TableLayout
 
         android:layout_width="fill_parent"
@@ -168,18 +177,22 @@
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Module Attendance: "
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/modulePercentage"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Module Attendance: "/>
+            android:text="85%"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
     <ImageView
         android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:src="@drawable/photo"
-        android:cropToPadding="true"
-
-
-        android:layout_marginLeft="100dp"
-
-
         android:adjustViewBounds="true"
         android:layout_gravity="top"
        />
@@ -190,17 +203,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Overall Attendance: "/>
+            android:text="Overall Attendance: "
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/moduleOverallAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
         <ImageView
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:src="@drawable/photo"
-            android:cropToPadding="true"
-
-
-            android:layout_marginLeft="100dp"
-
-
             android:adjustViewBounds="true"
             android:layout_gravity="right"/>
     </LinearLayout>
