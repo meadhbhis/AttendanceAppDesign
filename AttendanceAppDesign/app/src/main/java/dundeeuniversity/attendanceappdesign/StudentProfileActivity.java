@@ -54,4 +54,10 @@ public class StudentProfileActivity extends Activity {
 
         startActivity(intent);
     }
+
+    public void scanQR(View view){
+        Intent intent = new Intent(this, ScanQRTestActivity.class);
+
+        startActivity(intent);
+    }
 }

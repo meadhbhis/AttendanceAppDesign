@@ -19,10 +19,12 @@ public class ScanQRTestActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan_qrtest);
+        setContentView(R.layout.activity_student_profile);
+        Toast toast = Toast.makeText(this, "Not yet implemented", Toast.LENGTH_LONG);
+        toast.show();
     }
 
-    @Override
+ /*   @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_scan_qrtest, menu);
@@ -42,9 +44,9 @@ public class ScanQRTestActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
-    //product barcode mode
+ /*   //product barcode mode
     public void scanBar(View v) {
         try {
             //start the scanning activity from the com.google.zxing.client.android.SCAN intent
@@ -105,5 +107,5 @@ public class ScanQRTestActivity extends Activity {
                 toast.show();
             }
         }
-    }
+    }*/
 }

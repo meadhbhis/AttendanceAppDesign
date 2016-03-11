@@ -1,24 +1,22 @@
 package dundeeuniversity.attendanceappdesign;
 
-import android.app.Activity;
-import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class StaffViewStudentActivity extends Activity {
+public class WhereisIt extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_staff_view_student);
+        setContentView(R.layout.activity_whereis_it);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_staff_view_student, menu);
+        getMenuInflater().inflate(R.menu.menu_whereis_it, menu);
         return true;
     }
 
@@ -35,11 +33,5 @@ public class StaffViewStudentActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void viewStaffProfile(View view){
-        Intent intent = new Intent(this, StaffProfileActivity.class);
-
-        startActivity(intent);
     }
 }
