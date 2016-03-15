@@ -157,8 +157,7 @@
             <TextView
                 android:text="11:00 - 12:00"
                 android:padding="3dp"
-                android:layout_gravity="center_vertical"
-                android:onClick="viewClassStudent"/>
+                android:layout_gravity="center_vertical"/>
             <TextView
                 android:text=""
                 android:layout_gravity="center_vertical"
@@ -192,6 +191,7 @@
                 android:text="Human Computer Interaction"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
+                android:onClick="viewClassStudent"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
 
@@ -206,6 +206,7 @@
                 android:text="Dalhousie 2G11"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
+                android:onClick="viewClassStudent"
                 android:layout_gravity="center_vertical"/>
 
         </TableRow>
@@ -248,6 +249,7 @@
                 android:layout_gravity="center_vertical"/>
             <TextView
                 android:text="Agile Software Engineering"
+                android:onClick="viewClassStudent"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
@@ -262,6 +264,7 @@
             <TextView />
             <TextView
                 android:text="Dalhousie 2G12"
+                android:onClick="viewClassStudent"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"/>
@@ -279,6 +282,7 @@
             <TextView
                 android:text="Games Programming"
                 android:layout_gravity="center_vertical"
+                android:onClick="viewClassStudent"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -292,6 +296,7 @@
             <TextView />
             <TextView
                 android:text="Scrymgeour 2.08"
+                android:onClick="viewClassStudent"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"/>

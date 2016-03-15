@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -47,14 +48,15 @@ public class StudentProfileActivity extends Activity {
         emailAddressTextView.setText(aStudent.getEmail());
 
         TableLayout table = (TableLayout) findViewById(R.id.moduleTable);
-
         for(int i=0; i<3; i++){
             TableRow row = new TableRow(this);
             Module m = new Module();
             m = modules.get(i);
             TextView txtModuleID = new TextView(this);
             txtModuleID.setText(m.getModuleID());
+            txtModuleID.setPadding(20, 10, 20, 10);
             TextView txtModuleName = new TextView(this);
+            txtModuleName.setPadding(20, 10, 20, 10);
             txtModuleName.setText(m.getModuleName());
             row.addView(txtModuleID);
             row.addView(txtModuleName);
@@ -92,6 +94,18 @@ public class StudentProfileActivity extends Activity {
 
     public void viewStudentTimetable(View view){
         Intent intent = new Intent(this, StudentTimetableActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void scanQR(View view){
+        Toast.makeText(getApplicationContext(), "Not yet implemented!",
+                Toast.LENGTH_LONG).show();
+    }
+
+    //
+    public void logOut(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
 
         startActivity(intent);
     }

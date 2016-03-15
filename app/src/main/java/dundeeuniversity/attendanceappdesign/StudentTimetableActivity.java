@@ -6,8 +6,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import dundeeuniversity.attendanceappdesign.models.ModuleModel;
+import dundeeuniversity.attendanceappdesign.stores.Module;
 
 public class StudentTimetableActivity extends Activity {
+
+    TextView moduleTimeTextView;
+    TextView moduleTitleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
