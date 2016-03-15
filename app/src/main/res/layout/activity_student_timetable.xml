@@ -88,8 +88,7 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:background="#E3F2FD"
-        android:onClick="viewStudentClass">
+        android:background="#E3F2FD">
         <!-- May have to be changed to individual rows not sure yet-->
 
 
@@ -156,8 +155,7 @@
 
         <TableRow
             android:id="@+id/row3"
-            android:layout_weight="3"
-            android:onClick="viewStudentClass">
+            android:layout_weight="3">
             <TextView
                 android:text="11:00 - 12:00"
                 android:padding="3dp"
@@ -203,7 +201,8 @@
             android:id="@+id/extraRow4"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#FFCC80">
+            android:background="#FFCC80"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
@@ -245,7 +244,8 @@
         <TableRow
             android:id="@+id/row6"
             android:layout_weight="3"
-            android:background="#A5D6A7">
+            android:background="#A5D6A7"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="14:00 - 15:00"
                 android:padding="3dp"
@@ -261,7 +261,8 @@
             android:id="@+id/extraRow6"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#A5D6A7">
+            android:background="#A5D6A7"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
@@ -275,7 +276,8 @@
         <TableRow
             android:id="@+id/row7"
             android:layout_weight="3"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="15:00 - 16:00"
                 android:padding="3dp"
@@ -291,7 +293,8 @@
             android:id="@+id/extraRow7"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
@@ -305,7 +308,8 @@
         <TableRow
             android:id="@+id/row8"
             android:layout_weight="3"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="16:00 - 17:00"
                 android:padding="3dp"
@@ -321,7 +325,8 @@
             android:id="@+id/extraRow8"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
