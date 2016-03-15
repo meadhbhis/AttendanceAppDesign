@@ -4,7 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Banner for top of page-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#64B5F6">
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:onClick="viewStudentProfile"
+            android:background="#64B5F6"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:padding="10dp"
+            android:gravity="center|right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <!-- End of banner-->
 
     <TableLayout
         android:id="@+id/moduleDetailsTable"
@@ -38,6 +61,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/moduleCode"
                 android:text="AC31007"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -56,6 +80,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/classDate"
                 android:text="Friday 26th February"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -74,6 +99,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/classTime"
                 android:text="11:00am"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -92,6 +118,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/classSize"
                 android:text="Number/Class Size"
                 android:paddingLeft="20dp"/>
         </TableRow>
@@ -134,6 +161,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/averageAttendance"
                 android:text="percentage"
                 android:paddingLeft="20dp"/>
         </TableRow>

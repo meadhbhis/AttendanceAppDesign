@@ -45,7 +45,7 @@ public class StudentViewClassActivity extends Activity {
     }
 
     public void scanQR(View v) {
-    /*    try{
+        try{
             //start the scanning activity from the com.google.zxing.client.android.SCAN intent
             Intent intent = new Intent(ACTION_SCAN);
             intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
@@ -53,9 +53,7 @@ public class StudentViewClassActivity extends Activity {
         } catch (ActivityNotFoundException anfe) {
             //on catch, show the download dialog
             showDialog(StudentViewClassActivity.this, "No Scanner Found", "Download a scanner code activity?", "Yes", "No").show();
-        }*/
-        Toast.makeText(getApplicationContext(), "Not yet implemented!",
-                Toast.LENGTH_LONG).show();
+        }
     }
 
     //alert dialog for downloadDialog
@@ -92,5 +90,11 @@ public class StudentViewClassActivity extends Activity {
                 toast.show();
             }
         }
+    }
+
+    public void viewStudentProfile(View view){
+        Intent intent = new Intent(this, StudentProfileActivity.class);
+
+        startActivity(intent);
     }
 }

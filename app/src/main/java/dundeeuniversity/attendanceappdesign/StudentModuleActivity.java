@@ -37,5 +37,10 @@ public class StudentModuleActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void viewStudentProfile(View view){
+        Intent intent = new Intent(this, StudentProfileActivity.class);
+
+        startActivity(intent);
+    }
 
 }

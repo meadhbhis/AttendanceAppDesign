@@ -48,4 +48,10 @@ public class StaffModuleActivity extends Activity {
 
         startActivity(intent);
     }
+    public void viewStaffProfile(View view){
+        Intent intent = new Intent(this, StaffProfileActivity.class);
+
+        startActivity(intent);
+    }
+
 }

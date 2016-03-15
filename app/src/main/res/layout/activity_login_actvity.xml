@@ -1,48 +1,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="50dp"
     android:background="@drawable/watermark">
 
-        <EditText
-            android:id="@+id/txtUsername"
-            android:hint="Matriculation Number"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:gravity="center"
-            android:layout_weight="3"/>
+    <EditText
+        android:id="@+id/txtUsername"
+        android:hint="Matriculation Number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:maxLines="1" />
 
-        <EditText
-            android:id="@+id/txtPassword"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Passcode"
-            android:inputType="numberPassword"
-            android:layout_margin="30dp"
-            android:maxLength="4"
-            android:gravity="center"
-            android:password="true"
-            android:layout_weight="3"/>
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passcode"
+        android:inputType="numberPassword"
+        android:layout_margin="30dp"
+        android:maxLength="4"
+        android:gravity="center"
+        android:password="true"
+        android:layout_weight="3"
+        android:maxLines="1" />
 
     <CheckBox
-        android:layout_width="272dp"
-        android:layout_height="wrap_content"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
         android:text="Remember Me"
         android:id="@+id/rememberMe"
-        android:layout_weight="3"
-        android:layout_gravity="right" />
+        android:checked="true"
+        android:layout_gravity="center" />
 
     <Button
-            android:id="@+id/loginConfirm"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_margin="30dp"
-            android:onClick="studentLogin"
-            android:gravity="center"
-            android:background="#64B5F6"
-            android:layout_weight="1"/>
+        android:id="@+id/loginConfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_margin="30dp"
+        android:onClick="studentLogin"
+        android:gravity="center"
+        android:background="#64B5F6"
+        android:layout_weight="1"/>
+
 </LinearLayout>

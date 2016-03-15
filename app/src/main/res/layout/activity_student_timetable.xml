@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- Banner for top of page-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -87,7 +88,10 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:background="#E3F2FD">
+        android:background="#E3F2FD"
+        android:onClick="viewStudentClass">
+        <!-- May have to be changed to individual rows not sure yet-->
+
 
         <TableRow
             android:id="@+id/row1"
@@ -182,7 +186,8 @@
         <TableRow
             android:id="@+id/row4"
             android:layout_weight="3"
-            android:background="#FFCC80">
+            android:background="#FFCC80"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="12:00 - 13:00"
                 android:padding="3dp"
@@ -191,7 +196,6 @@
                 android:text="Human Computer Interaction"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:onClick="viewClassStudent"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
 
@@ -206,7 +210,6 @@
                 android:text="Dalhousie 2G11"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="viewClassStudent"
                 android:layout_gravity="center_vertical"/>
 
         </TableRow>
@@ -249,7 +252,6 @@
                 android:layout_gravity="center_vertical"/>
             <TextView
                 android:text="Agile Software Engineering"
-                android:onClick="viewClassStudent"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
@@ -264,7 +266,6 @@
             <TextView />
             <TextView
                 android:text="Dalhousie 2G12"
-                android:onClick="viewClassStudent"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"/>
@@ -282,7 +283,6 @@
             <TextView
                 android:text="Games Programming"
                 android:layout_gravity="center_vertical"
-                android:onClick="viewClassStudent"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"/>
         </TableRow>
@@ -296,7 +296,6 @@
             <TextView />
             <TextView
                 android:text="Scrymgeour 2.08"
-                android:onClick="viewClassStudent"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"/>

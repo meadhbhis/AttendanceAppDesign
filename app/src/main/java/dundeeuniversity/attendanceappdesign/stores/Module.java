@@ -1,8 +1,5 @@
 package dundeeuniversity.attendanceappdesign.stores;
 
-import java.sql.Time;
-import java.util.Date;
-
 /**
  * Created by john.bothwell1705 on 09/03/2016.
  */
@@ -11,8 +8,6 @@ public class Module {
     private String moduleName;
     private String moduleStaff;
     private int moduleYear;
-    private int moduleTime;
-    private String moduleRoom;
 
     public String getModuleID() {
         return moduleID;
@@ -45,14 +40,6 @@ public class Module {
     public void setModuleYear(int moduleYear) {
         this.moduleYear = moduleYear;
     }
-
-    public void setModuleTime(int moduleTime) {this.moduleTime = moduleTime; }
-
-    public int getModuleTime() { return moduleTime; }
-
-    public void setModuleRoom(String moduleRoom) {this.moduleRoom = moduleRoom; }
-
-    public String getModuleRoom() { return moduleRoom; }
 
     public Module(){
 
