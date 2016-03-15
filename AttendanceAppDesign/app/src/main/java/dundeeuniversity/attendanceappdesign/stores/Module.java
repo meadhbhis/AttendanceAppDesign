@@ -45,6 +45,11 @@ public class Module {
 
     }
 
+    public Module(String moduleID, String moduleName){
+        this.moduleID = moduleID;
+        this.moduleName = moduleName;
+    }
+
     public Module(String moduleID, String moduleName, String moduleStaff, int moduleYear){
         this.moduleID = moduleID;
         this.moduleName = moduleName;
