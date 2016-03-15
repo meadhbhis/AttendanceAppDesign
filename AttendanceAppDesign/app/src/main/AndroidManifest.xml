@@ -65,10 +65,6 @@
             android:name=".StaffCreateClass"
             android:label="@string/title_activity_staff_create_class" >
         </activity>
-        <activity
-            android:name=".WhereisIt"
-            android:label="@string/title_activity_whereis_it" >
-        </activity>
     </application>
 
 </manifest>

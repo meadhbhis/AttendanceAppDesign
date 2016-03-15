@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     protected void onCreate(final Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_actvity);
-        startActivity(new Intent(getApplicationContext(), StudentProfileActivity.class));
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
 
         matriculation = (EditText) findViewById(R.id.txtUsername);
         passcode = (EditText) findViewById(R.id.txtPassword);

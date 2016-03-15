@@ -1,14 +1,17 @@
 package dundeeuniversity.attendanceappdesign;
 
 //Login Activity hijacked by Will Hulme to make it work properly
-//DO NOT TOUCH WITHOUT PERMISSION!!!!!!!!!!!!!!!!!!
 //13:00 8/3/2016
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -26,13 +29,24 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     private EditText matriculation,passcode;
     private Button login;
     private RequestQueue requestQueue;
-    private static final String URL = "https://zeno.computing.dundee.ac.uk/2015-agile/team4/login.php";
+    private static final String URL = "https://zeno.computing.dundee.ac.uk/2015-agile/team4/user_control.php";
     private StringRequest request;
+
+    final String TAG = this.getClass().getName();
+    private CheckBox rememberMe;
+    private SharedPreferences loginPrefs;
+    private SharedPreferences.Editor loginEditor;
+    private final static String USERNAME_KEY="matriculation";
+    private final static String PASSWORD_KEY="passcode";
+    private final static String SAVED_KEY="saved";
+    private Intent logIntent;
+    private boolean saved;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState){
@@ -43,20 +57,56 @@ public class LoginActivity extends AppCompatActivity {
         passcode = (EditText) findViewById(R.id.txtPassword);
         login = (Button) findViewById(R.id.loginConfirm);
 
-        requestQueue = Volley.newRequestQueue(this);
+        //check box code to see if data needs saving
+        rememberMe = (CheckBox) findViewById(R.id.rememberMe);
+        rememberMe.setOnCheckedChangeListener(this);
+        saved = rememberMe.isChecked();
 
+        //setting up the shared preferences to store the data
+        loginPrefs=getSharedPreferences("loginPrefs", MODE_PRIVATE);
+        loginEditor = loginPrefs.edit();
+
+        String username = loginPrefs.getString("USERNAME_KEY", "");
+        String password = loginPrefs.getString("PASSWORD_KEY", "");
+
+        if(!(username.equals("") && password.equals("")))
+        {
+
+            // this will be the same login code as bellow (onClick) to get the info from the database, to check if a saved preference exists,
+            // if it does then we will preform the login using the shared preference details and avoiding
+            // having to click the login button
+
+
+        }
+
+        requestQueue = Volley.newRequestQueue(this);
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
 
-                request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>()
-                {
+                // this IF statement needs to go inside the code below after the username and password have been checked successfully
+                if(saved){
+
+                    //saves the data
+                    loginEditor.putString("USERNAME_KEY", matriculation.getText().toString());
+                    loginEditor.putString("PASSWORD_KEY", passcode.getText().toString());
+                    loginEditor.apply();
+
+                    //prints data to the android log (only required to check its working, delete after checking)
+                    Log.d(TAG, loginPrefs.getString(USERNAME_KEY, ""));
+                    Log.d(TAG, loginPrefs.getString(PASSWORD_KEY, ""));
+
+                }
+                request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if(jsonObject.names().get(0).equals("success")) {
                                 Toast.makeText(getApplicationContext(),jsonObject.getString("success"),Toast.LENGTH_SHORT).show();
+
+                                // Code above should go here i think after the successful checking of the username and password
+
                                 startActivity(new Intent(getApplicationContext(),StudentTimetableActivity.class));
                             } else {
                                 Toast.makeText(getApplicationContext(),jsonObject.getString("error"),Toast.LENGTH_SHORT).show();
@@ -65,24 +115,33 @@ public class LoginActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
-                }, new Response.ErrorListener()
-                {
+                    }, new Response.ErrorListener(){
                         @Override
                                 public void onErrorResponse(VolleyError error){
                         }
-                })
-                {
+                }){
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         HashMap<String,String> hashMap = new HashMap<String,String>();
                         hashMap.put("matriculation",matriculation.getText().toString());
                         hashMap.put("passcode",passcode.getText().toString());
-
                         return hashMap;
                     }
                 };
                 requestQueue.add(request);
             }
         });
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        saved = isChecked;
+    }
+
+//    Get rid of this at some point when the login isnt being fucked around with by WILL
+    public void byPassLogin(View view){
+        Intent intent = new Intent(this, StudentProfileActivity.class);
+
+        startActivity(intent);
     }
 }

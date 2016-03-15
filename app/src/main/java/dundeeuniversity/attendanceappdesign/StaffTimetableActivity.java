@@ -26,27 +26,8 @@ public class StaffTimetableActivity extends Activity {
 
         Log.d(TAG, loginPrefs.getString("USERNAME_KEY", ""));
         Log.d(TAG, loginPrefs.getString("PASSWORD_KEY", ""));
-
-        logout = (Button) findViewById(R.id.btnLogout);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                // clears the shared preferences and send the user back to the login page
-                loginEditor = loginPrefs.edit();
-                loginEditor.clear();
-                loginEditor.commit();
-
-                Intent in = new Intent(StaffTimetableActivity.this, LoginActivity.class);
-                startActivity(in);
-            }
-        });
-
-
-
-
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

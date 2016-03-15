@@ -12,7 +12,7 @@
         android:layout_margin="10dp">
 
         <ImageView
-            android:layout_width="150dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:src="@drawable/photo"
             android:cropToPadding="true"
@@ -121,6 +121,27 @@
                 android:singleLine="false"/>
 
         </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:text="AC32005"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/moduleTitle4"
+                android:layout_width="wrap_content"
+                android:text="Human Computer Interaction And Usability Engineering"
+                android:layout_marginLeft="20dp"
+                android:singleLine="false"/>
+        </TableRow>
+
+
     </TableLayout>
 
     <LinearLayout
@@ -149,8 +170,7 @@
                 android:layout_margin="10dp"
                 android:text="Timetable"
                 android:background="#64B5F6"
-                android:onClick="viewStudentTimetable"
-                android:padding="10dp"/>
+                android:onClick="viewStudentTimetable"/>
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
