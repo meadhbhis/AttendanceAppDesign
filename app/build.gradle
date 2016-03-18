@@ -26,5 +26,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     testCompile 'junit:junit:4.12'
     testCompile "org.mockito:mockito-core:1.9.5"
+<<<<<<< HEAD
     compile 'junit:junit:4.12'
+=======
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+>>>>>>> a2eabf4250e5974a8067159130c768482d9d8822
 }

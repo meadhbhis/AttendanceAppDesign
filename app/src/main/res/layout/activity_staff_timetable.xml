@@ -100,11 +100,11 @@
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:text=""
                 android:paddingTop="3dp"
                 android:paddingLeft="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/module1" />
         </TableRow>
 
         <TableRow
@@ -114,10 +114,10 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info1" />
 
         </TableRow>
 
@@ -132,10 +132,10 @@
                 android:layout_gravity="center_vertical"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:text=""
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module2" />
         </TableRow>
 
         <TableRow
@@ -145,10 +145,10 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info2" />
 
         </TableRow>
 
@@ -162,10 +162,10 @@
                 android:layout_gravity="center_vertical"
                 android:onClick="viewClassStudent"/>
             <TextView
-                android:text=""
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module3" />
         </TableRow>
 
         <TableRow
@@ -175,10 +175,10 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info3" />
 
         </TableRow>
 
@@ -194,7 +194,8 @@
                 android:text="Human Computer Interaction"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module4" />
         </TableRow>
 
         <TableRow
@@ -208,7 +209,8 @@
                 android:text="Dalhousie 2G11"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info4" />
 
         </TableRow>
 
@@ -220,10 +222,10 @@
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:text=""
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module5" />
         </TableRow>
 
         <TableRow
@@ -233,10 +235,10 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info5" />
 
         </TableRow>
 
@@ -252,7 +254,8 @@
                 android:text="Agile Software Engineering"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module6" />
         </TableRow>
 
         <TableRow
@@ -266,7 +269,8 @@
                 android:text="Dalhousie 2G12"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info6" />
 
         </TableRow>
 
@@ -282,7 +286,8 @@
                 android:text="Games Programming"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module7" />
         </TableRow>
 
         <TableRow
@@ -296,7 +301,8 @@
                 android:text="Scrymgeour 2.08"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info7" />
 
         </TableRow>
 
@@ -312,7 +318,8 @@
                 android:text="Games Programming"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module8" />
         </TableRow>
 
         <TableRow
@@ -326,7 +333,8 @@
                 android:text="Scrymgeour 2.08"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info8" />
 
         </TableRow>
     </TableLayout>
