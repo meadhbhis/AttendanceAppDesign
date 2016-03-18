@@ -88,8 +88,7 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:background="#E3F2FD"
-        android:onClick="viewStudentClass">
+        android:background="#E3F2FD">
         <!-- May have to be changed to individual rows not sure yet-->
 
 
@@ -106,7 +105,8 @@
                 android:paddingTop="3dp"
                 android:paddingLeft="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/module1" />
         </TableRow>
 
         <TableRow
@@ -119,7 +119,8 @@
                 android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info1" />
 
         </TableRow>
 
@@ -134,10 +135,10 @@
                 android:layout_gravity="center_vertical"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:text=""
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module2" />
         </TableRow>
 
         <TableRow
@@ -147,26 +148,25 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info2" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/row3"
-            android:layout_weight="3"
-            android:onClick="viewStudentClass">
+            android:layout_weight="3">
             <TextView
                 android:text="11:00 - 12:00"
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:text=""
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module3" />
         </TableRow>
 
         <TableRow
@@ -176,10 +176,10 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info3" />
 
         </TableRow>
 
@@ -196,21 +196,24 @@
                 android:text="Human Computer Interaction"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module4" />
         </TableRow>
 
         <TableRow
             android:id="@+id/extraRow4"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#FFCC80">
+            android:background="#FFCC80"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
                 android:text="Dalhousie 2G11"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info4" />
 
         </TableRow>
 
@@ -222,10 +225,10 @@
                 android:padding="3dp"
                 android:layout_gravity="center_vertical"/>
             <TextView
-                android:text=""
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module5" />
         </TableRow>
 
         <TableRow
@@ -235,17 +238,18 @@
 
             <TextView />
             <TextView
-                android:text=""
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info5" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/row6"
             android:layout_weight="3"
-            android:background="#A5D6A7">
+            android:background="#A5D6A7"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="14:00 - 15:00"
                 android:padding="3dp"
@@ -254,28 +258,32 @@
                 android:text="Agile Software Engineering"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module6" />
         </TableRow>
 
         <TableRow
             android:id="@+id/extraRow6"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#A5D6A7">
+            android:background="#A5D6A7"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
                 android:text="Dalhousie 2G12"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info6" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/row7"
             android:layout_weight="3"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="15:00 - 16:00"
                 android:padding="3dp"
@@ -284,28 +292,32 @@
                 android:text="Games Programming"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module7" />
         </TableRow>
 
         <TableRow
             android:id="@+id/extraRow7"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
                 android:text="Scrymgeour 2.08"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info7" />
 
         </TableRow>
 
         <TableRow
             android:id="@+id/row8"
             android:layout_weight="3"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
             <TextView
                 android:text="16:00 - 17:00"
                 android:padding="3dp"
@@ -314,21 +326,24 @@
                 android:text="Games Programming"
                 android:layout_gravity="center_vertical"
                 android:padding="3dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:id="@+id/module8" />
         </TableRow>
 
         <TableRow
             android:id="@+id/extraRow8"
             android:layout_weight="3"
             android:layout_gravity="center_vertical"
-            android:background="#FFF59D">
+            android:background="#FFF59D"
+            android:onClick="viewStudentClass">
 
             <TextView />
             <TextView
                 android:text="Scrymgeour 2.08"
                 android:padding="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:id="@+id/info8" />
 
         </TableRow>
     </TableLayout>
