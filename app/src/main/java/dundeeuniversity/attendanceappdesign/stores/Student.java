@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * Created by john.bothwell1705 on 09/03/2016.
  */
 public class Student {
+
     private int studentID;
     private String firstname;
     private String lastname;
@@ -13,6 +14,7 @@ public class Student {
     private String course;
     private String matricNo;
     private int isInternationalStudent;
+    private ArrayList<Module> modules;
 
     public int getStudentID() {
         return studentID;
@@ -69,18 +71,16 @@ public class Student {
     public void setIsInternationalStudent(int isInternationalStudent) {
         this.isInternationalStudent = isInternationalStudent;
     }
-    
-    public Student(){
 
+    public ArrayList<Module> getModules() {
+        return modules;
     }
 
-    public Student(int studentID, String firstname, String lastname, String email, String course, String matricNo, int isInternationalStudent){
-        this.studentID = studentID;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.course = course;
-        this.matricNo = matricNo;
-        this.isInternationalStudent = isInternationalStudent;
+    public void setModules(ArrayList<Module> modules) {
+        this.modules = modules;
+    }
+
+    public Student(){
+
     }
 }
